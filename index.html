@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy Birthday ✨</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="section hero">
+  <h1>Happy Birthday 💖</h1>
+  <p>Someone very special deserves something special</p>
+  <button onclick="nextSection('photos')">Start ✨</button>
+</section>
+
+<section class="section hidden" id="photos">
+  <h2>Some Moments I Like 🌸</h2>
+
+  <div class="card-grid">
+    <div class="card">
+      <div class="front" style="background-image:url('assets/pic1.jpeg')"></div>
+      <div class="back">you ✨</div>
+    </div>
+    <div class="card">
+      <div class="front" style="background-image:url('assets/pic2.jpeg')"></div>
+      <div class="back">are 💫</div>
+    </div>
+    <div class="card">
+      <div class="front" style="background-image:url('assets/pic3.jpeg')"></div>
+      <div class="back">so 💕</div>
+    </div>
+    <div class="card">
+      <div class="front" style="background-image:url('assets/pic4.jpeg')"></div>
+      <div class="back">Cute. 💖</div>
+    </div>
+  </div>
+
+  <button onclick="nextSection('video1')">Next →</button>
+</section>
+
+<section class="section hidden" id="video1">
+  <h2>A Small Memory 🎥</h2>
+  <h4>Mere pass jyda video nhi tha... so, adjust</h4>
+  <div class="video-wrap">
+    <video controls>
+      <source src="assets/video1.mp4" type="video/mp4">
+    </video>
+  </div>
+  <button onclick="nextSection('message')">Continue 💌</button>
+</section>
+
+<section class="section hidden" id="message">
+  <h2>Just Saying…</h2>
+  <p id="dynamicText">
+    You have this rare way of making moments feel lighter,  
+    smiles feel real, and days feel better.
+  </p>
+  <button onclick="changeText()">Tap Me 💫</button>
+  <button onclick="nextSection('video2')">One More →</button>
+</section>
+
+<section class="section hidden" id="video2">
+  <h2>That - Don't angry me look. 🌷</h2>
+  <div class="video-wrap">
+    <video controls>
+      <source src="assets/video2.mp4" type="video/mp4">
+    </video>
+  </div>
+  <button onclick="nextSection('final')">Finish 💖</button>
+</section>
+
+<section class="section hidden final" id="final">
+  <h1>Stay Amazing 💕</h1>
+  <h1>Happy Birthday! 🎉</h1>
+  <h2>Many many returns of the day</h2>
+  <p>
+    I hope today brings you smiles, warmth,  
+    and a reminder of how wonderful you truly are.
+  </p>
+  <button onclick="confetti()">🎉 Celebrate 🎉</button>
+  <canvas id="confettiCanvas"></canvas>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
